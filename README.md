@@ -685,4 +685,5 @@ route add -net 10.16.0.0 netmask 255.255.192.0 gw 10.16.32.2
 ```
 Sebagai routing
 
-
+### Testing
+Untuk Testing bisa melakukan ping dari router ataupun host ke internet seperti `yahoo.com` atau bisa ke node lain dan apabila berhasil melakukan ping, maka sudah berhasil subnetting dan routingnya.
