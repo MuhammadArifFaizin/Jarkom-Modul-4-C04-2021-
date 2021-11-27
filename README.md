@@ -382,6 +382,10 @@ Tree :
 
 ![CIDR GNS3 Project](img/cidr_soal.png)
 
+
+
+![CIDR Tree](img/cidr_tree.png)
+
 ### ELENA
 
 ```
@@ -410,6 +414,7 @@ address 10.16.0.1
 netmask 255.255.252.0
 ```
 
+
 ### ENIESLOBBY
 
 ```
@@ -437,6 +442,14 @@ iface eth1 inet static
 address 10.16.4.1
 netmask 255.255.255.0
 ```
+
+Kemudian jalankan
+```
+route add -net 10.16.0.0 netmask 255.255.248.0 gw 10.16.4.3
+
+route add -net 10.16.0.0 netmask 255.255.248.0 gw 10.16.4.2
+```
+Sebagai routing
 
 ### JABRA
 
@@ -513,6 +526,18 @@ iface eth3 inet static
 address 10.16.16.1
 netmask 255.255.254.0
 ```
+
+Kemudian Jalankan
+```
+route add -net 10.16.16.0 netmask 255.255.252.0 gw 10.16.16.3
+
+route add -net 10.16.16.0 netmask 255.255.252.0 gw 10.16.16.2
+
+route add -net 10.16.20.0 netmask 255.255.252.0 gw 10.16.20.2
+
+route add -net 10.16.0.0 netmask 255.255.240.0 gw 10.16.8.2
+```
+Sebagai Routing
 
 ### JIPANGU
 
@@ -600,6 +625,15 @@ address 10.16.144.1
 netmask 255.255.255.252
 ```
 
+Kemudian Jalankan
+```
+route add -net 10.16.160.0 netmask 255.255.252.0 gw 10.16.160.2
+
+route add -net 10.16.128.0 netmask 255.255.224.0 gw 10.16.144.2
+```
+
+Sebagai routing
+
 ### BLUENO
 
 ```
@@ -635,4 +669,14 @@ address 10.16.32.1
 netmask 255.255.255.252
 ```
 
-![CIDR Tree](img/cidr_tree.png)
+Kemudian Jalankan
+```
+route add -net 10.16.64.0 netmask 255.255.252.0 gw 10.16.64.2
+
+route add -net 10.16.128.0 netmask 255.255.128.0 gw 10.16.192.2
+
+route add -net 10.16.0.0 netmask 255.255.192.0 gw 10.16.32.2
+```
+Sebagai routing
+
+
