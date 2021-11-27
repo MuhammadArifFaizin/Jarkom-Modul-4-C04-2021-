@@ -387,7 +387,7 @@ Tree :
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.0.0
+address 10.16.0.2
 netmask 255.255.252.0
 gateway 10.16.0.1
 ```
@@ -395,9 +395,12 @@ gateway 10.16.0.1
 ### SEASTONE
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.4.0
+address 10.16.4.2
 netmask 255.255.255.0
 gateway 10.16.4.1
 
@@ -412,7 +415,7 @@ netmask 255.255.252.0
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.4.0
+address 10.16.4.3
 netmask 255.255.255.0
 gateway 10.16.4.1
 ```
@@ -420,15 +423,18 @@ gateway 10.16.4.1
 ### OIMO
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.8.0
+address 10.16.8.2
 netmask 255.255.255.252
 gateway 10.16.8.1
 
 auto eth1
 iface eth1 inet static
-address 10.16.4.0
+address 10.16.4.1
 netmask 255.255.255.0
 ```
 
@@ -447,7 +453,7 @@ gateway 192.168.20.1
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.18.0
+address 10.16.18.2
 netmask 255.255.255.240
 gateway 10.16.18.1
 ```
@@ -455,9 +461,12 @@ gateway 10.16.18.1
 ### ALABASTA
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.16.0
+address 10.16.16.2
 netmask 255.255.254.0
 gateway 10.16.16.1
 
@@ -472,7 +481,7 @@ netmask 255.255.255.240
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.16.0
+address 10.16.16.3
 netmask 255.255.254.0
 gateway 10.16.16.1
 ```
@@ -480,25 +489,28 @@ gateway 10.16.16.1
 ### GUANHAO
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.32.0
+address 10.16.32.2
 netmask 255.255.255.252
 gateway 10.16.32.1
 
 auto eth1
 iface eth1 inet static
-address 10.16.20.0
+address 10.16.20.1
 netmask 255.255.252.0
 
 auto eth2
 iface eth2 inet static
-address 10.16.8.0
+address 10.16.8.1
 netmask 255.255.255.252
 
 auto eth3
 iface eth3 inet static
-address 10.16.16.0
+address 10.16.16.1
 netmask 255.255.254.0
 ```
 
@@ -507,7 +519,7 @@ netmask 255.255.254.0
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.136.0
+address 10.16.136.2
 netmask 255.255.255.128
 gateway 10.16.136.1
 ```
@@ -517,7 +529,7 @@ gateway 10.16.136.1
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.128.0
+address 10.16.128.2
 netmask 255.255.248.0
 gateway 10.16.128.1
 ```
@@ -527,7 +539,7 @@ gateway 10.16.128.1
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.128.0
+address 10.16.128.3
 netmask 255.255.248.0
 gateway 10.16.128.1
 ```
@@ -535,20 +547,23 @@ gateway 10.16.128.1
 ### PUCCI
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.144.0
+address 10.16.144.2
 netmask 255.255.255.252
 gateway 10.16.144.1
 
 auto eth1
 iface eth1 inet static
-address 10.16.136.0
+address 10.16.136.1
 netmask 255.255.255.128
 
 auto eth2
 iface eth2 inet static
-address 10.16.128.0
+address 10.16.128.1
 netmask 255.255.248.0
 ```
 
@@ -557,7 +572,7 @@ netmask 255.255.248.0
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.160.0
+address 10.16.160.2
 netmask 255.255.252.0
 gateway 10.16.160.1
 ```
@@ -565,20 +580,23 @@ gateway 10.16.160.1
 ### WATER7
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet static
-address 10.16.192.0
+address 10.16.192.2
 netmask 255.255.255.252
 gateway 10.16.192.1
 
 auto eth1
 iface eth1 inet static
-address 10.16.160.0
+address 10.16.160.1
 netmask 255.255.252.0
 
 auto eth2
 iface eth2 inet static
-address 10.16.144.0
+address 10.16.144.1
 netmask 255.255.255.252
 ```
 
@@ -587,7 +605,7 @@ netmask 255.255.255.252
 ```
 auto eth0
 iface eth0 inet static
-address 10.16.64.0
+address 10.16.64.2
 netmask 255.255.252.0
 gateway 10.16.64.1
 ```
@@ -595,22 +613,25 @@ gateway 10.16.64.1
 ### FOOSHA
 
 ```
+auto lo
+iface lo inet loopback
+
 auto eth0
 iface eth0 inet dhcp
 
 auto eth1
 iface eth1 inet static
-address 10.16.64.0
+address 10.16.64.1
 netmask 255.255.252.0
 
 auto eth2
 iface eth2 inet static
-address 10.16.192.0
+address 10.16.192.1
 netmask 255.255.255.252
 
 auto eth3
 iface eth3 inet static
-address 10.16.32.0
+address 10.16.32.1
 netmask 255.255.255.252
 ```
 
