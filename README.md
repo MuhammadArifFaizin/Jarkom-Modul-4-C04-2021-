@@ -382,9 +382,15 @@ Tree :
 
 ![CIDR GNS3 Project](img/cidr_soal.png)
 
+## Pembagian Subnetting:
+![CIDR Subnet](img/CIDRSub.jpg)
 
-
+## Tree:
 ![CIDR Tree](img/cidr_tree.png)
+
+## Config Gns3
+Jalankan IPTABLES Pada Foosha, dan lakukan echo nameserver pada setiap node.
+Kemudian ke setiap router dilakukan command `nano /etc/sysctl.conf` dan meng-uncomment `net.ipv4.ip_forward=1`
 
 ### ELENA
 
